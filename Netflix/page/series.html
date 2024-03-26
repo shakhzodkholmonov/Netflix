@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/Netflix/css/series.css">
+  <title>Netflix</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+
+<body>
+
+  <div
+    style="background-image: linear-gradient(to right, rgb(16, 15, 15) 5%, rgba(0, 0, 0, 0) 90%), url('https://image.tmdb.org/t/p/original/1mOQJIwfjvY0tbR4NDvuOatH8ka.jpg')"
+    class="banner h-[420px]">
+    <header class="sticky h-[60px]  w-[100%] top-0 left-0 bg-transparent">
+      <div class="justify-between flex">
+        <div class="left-header flex">
+          <div class="logo">
+            <a href="/Netflix/index.html">
+              <img class="h-11 pt-4 pl-9" src="/Netflix/img/image.png" alt="">
+            </a>
+          </div>
+          <div class="mt-4 ml-10 text-white">
+            <a href="/Netflix/index.html">Home</a>
+            <a class="ml-5" href="/Netflix/page/series.html">Series</a>
+            <a class="ml-5" href="/Netflix/page/movies.html">Movies</a>
+            <a class="ml-5" href="/Netflix/page/list.html">My List</a>
+          </div>
+        </div>
+        <div class="right-header mr-9 mt-2">
+          <button class="h-10 w-10 rounded-xl bg-yellow-400"><svg class="ml-[10px]" xmlns="http://www.w3.org/2000/svg"
+              width="20" height="20" viewBox="0 0 24 24">
+              <path fill="black" d="M12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10" />
+              <path fill="black" fill-rule="evenodd"
+                d="M12 1a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1M3.293 3.293a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414m17.414 0a1 1 0 0 1 0 1.414l-1.5 1.5a1 1 0 1 1-1.414-1.414l1.5-1.5a1 1 0 0 1 1.414 0M1 12a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1m19 0a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1M6.207 17.793a1 1 0 0 1 0 1.414l-1.5 1.5a1 1 0 0 1-1.414-1.414l1.5-1.5a1 1 0 0 1 1.414 0m11.586 0a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414M12 20a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1"
+                clip-rule="evenodd" />
+            </svg></button>
+        </div>
+      </div>
+    </header>
+    <div class="ml-10 pt-16">
+      <div class="">
+        <h1 class="text-4xl text-red-700">The Legend of ShenLi</h1>
+        <h5 class="w-[900px] text-white pt-3">The ancient gods died, and there is only one last god in the world -
+          Xingzhi. Rumor has it that this God of Action has lived alone in the heavens for tens of thousands of years,
+          ruthless and lustless. In the battle of the immortals and demons, he turned the tide by himself, and since
+          then, Du Men has been swept away, and his traces are hard to find. Hundreds of years are just a click away. As
+          the queen who was born with a pearl in the devil world, Shen Li's life was bright and dazzling. But on the
+          occasion of her thousand-year-old birthday, the claws of political marriage were scratching their heads.
+
+        </h5>
+        <div class="mt-10 flex gap-5">
+          <button class="h-[40px] w-[120px] rounded bg-red-600">Watch Now</button>
+          <button class="h-[40px] w-[140px] rounded bg-neutral-600">More information</button>
+        </div>
+      </div>
+    </div>
+    <!-- <main class="bg-neutral-700 h-[100vh] mt-[67px]">
+    </main> -->
+  </div>
+
+  <script type=" module" src="/main.js"></script>
+</body>
+
+</html>

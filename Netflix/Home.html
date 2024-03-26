@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"
+    integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/Netflix/css/style.css">
+  <title>Netflix Uzbekistan - Watch TV Shows</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+</head>
+
+<body class="bg-black">
+  <!-- Wrapper -->
+  <div class="wrapper h-screen w-fit">
+    <!-- Page one -->
+    <div class="w-fit h-full"
+      style="background: linear-gradient(to bottom,rgba(0, 0, 0, 0.7) 0%,rgba(0, 0, 0, 0.4) 70%,rgba(0, 0, 0, 0.4) 100%),url('https://assets.nflxext.com/ffe/siteui/vlv3/9d3533b2-0e2b-40b2-95e0-ecd7979cc88b/9c86c926-6668-4824-b071-c67be67c96e3/UZ-en-20240311-popsignuptwoweeks-perspective_alpha_website_medium.jpg')bottom/cover;">
+      <!-- Navbar -->
+      <div class="flex justify-center">
+        <div class="sm:w-9/12 w-full pr-4 pl-4 flex gap-4 justify-between pt-7">
+          <div>
+            <svg viewBox="0 0 111 30" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+              class="fill-current text-red-600 md:w-36 md:h-10 w-24 h-auto default-ltr-cache-1d568uk ev1dnif2">
+              <g>
+                <path
+                  d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z">
+                </path>
+              </g>
+            </svg>
+          </div>
+          <div>
+            <div class="flex gap-5">
+              <div class="flex gap-5">
+                <button class="w-20 h-8 bg-red-500 hover:bg-blue-700 text-white rounded">Sign In</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-4/5 font-sans flex flex-col justify-center items-center">
+        <div class="flex">
+          <h1
+            class="text-white max-w-5xl font-sans pl-4 pr-4 leading-tight sm:text-5xl text-3xl text-center font-bold sm:font-black">
+            Unlimited movies, TV shows, and more</h1>
+        </div>
+        <div class="mt-4">
+          <p class="text-white max-w-5xl font-sans-sreif sm:text-2xl text-lg text-center font-normal">Watch anywhere.
+            Cancel anytime.</p>
+        </div>
+        <div class="mt-4">
+          <h3 class="text-white max-w-5xl font-sans-sreif pl-4 pr-4 md:text-xl text-lg text-center font-normal">Ready to
+            watch? Enter your email to create or restart your membership.</h3>
+          <div class="flex gap-3 flex-col md:flex-row text-center justify-center mt-6">
+            <div>
+              <input
+                class="md:w-96 h-14 w-72 bg-black text-white bg-opacity-50 font-netflix-sans text-xl border-gray-300 pl-6 rounded-md border"
+                type="email" placeholder="Email Address" />
+            </div>
+            <div>
+              <a href="/Netflix/index.html">
+                <button
+                  class="w-48 h-14 text-2xl bg-red-600 hover:bg-blue-700 text-white font-sans py-2 px-4 rounded">Get
+                  Started<i class="fa-solid fa-chevron-right" style="font-size: smaller"></i>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page two -->
+    <section
+      class="w-fit bg-black border-gray-500 border-t-8 h-5/6 flex justify-center items-center lg:flex-row flex-col gap-5">
+      <div class="md:w-[579px] flex mt-4 flex-col md:h-40">
+        <h1
+          class="text-white md:w-[579px] font-sans font-bold text-center pl-4 pr-4 text-4xl lg:text-left leading-tight lg:text-5xl md:font-black">
+          Enjoy on your TV</h1>
+        <h3
+          class="text-white md:w-[579px] pt-4 text-center pl-4 pr-4 text-lg font-normal lg:text-left font-sans-sreif md:text-2xl md:font-normal">
+          Watch on smart TVs, PlayStation, Xbox, Chromecast,<br />Apple TV,Blu-ray players and more.</h3>
+      </div>
+      <div class="relative flex justify-center">
+        <img class="relative gap-5 z-20" src="image/tv.png" alt="" style="width: 82%" />
+        <video type="m4v" autoplay="on" loop="on" class="absolute w-2/3 h-2/3 top-11 z-10">
+          <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" />
+        </video>
+      </div>
+    </section>
+    <!-- Page three  -->
+    <section
+      class="w-fit bg-black border-gray-500 border-t-8 h-5/6 flex justify-center items-center md:flex-row flex-col-reverse gap-5">
+      <div class="flex relative flex-col justify-center items-center">
+        <img class="relative gap-5 z-20 md:w-[82%]" src="image/mobile-0819.jpg" alt="" />
+        <div
+          class="absolute bottom-6 z-20 md:w-3/5 md:h-24 rounded-2xl bg-black border flex gap-x-10 justify-center items-center border-slate-200">
+          <img class="h-20 pt-2 pl-3" src="image/stranger things.png" alt="" />
+          <div>
+            <h3 class="text-white text-base font-netflix-sans">Stranger Things</h3>
+            <div><a class="text-blue-800" href="#">Downloading...</a></div>
+          </div>
+          <div>
+            <img class="w-12" src="image/loading.gif" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="md:w-[579px] flex mt-4 flex-col md:h-40">
+        <h1
+          class="text-white md:w-[579px] text-4xl font-bold font-sans pl-3 pr-3 text-center md:text-left leading-tight md:text-5xl md:font-black">
+          Download your shows to <br />watch offline</h1>
+        <h3
+          class="text-white md:w-[579px] pt-4 text-center pl-4 pr-4 text-lg font-normal md:text-left font-sans-sreif md:text-2xl md:font-normal">
+          Save your favourites easily and always have <br />something to watch.</h3>
+      </div>
+    </section>
+    <!-- Page four -->
+    <section
+      class="w-fit bg-black border-gray-500 border-t-8 h-5/6 flex justify-center items-center md:flex-row flex-col gap-5">
+      <div class="md:w-[579px] flex mt-4 flex-col md:h-40">
+        <h1
+          class="text-white md:w-[579px] font-sans font-bold text-4xl pr-4 pl-4 text-center md:text-left leading-tight md:text-5xl md:font-black">
+          Watch everywhere</h1>
+        <h3
+          class="text-white md:w-[579px] pl-4 pr-4 pt-4 font-sans-sreif text-lg font-normal text-center md:text-left md:text-2xl md:font-normal">
+          Stream unlimited movies and TV shows on your <br />phone, tablet, laptop, and TV.</h3>
+      </div>
+      <div class="relative flex justify-center">
+        <img class="relative gap-5 z-20"
+          src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt=""
+          style="width: 82%" />
+        <video type="m4v" autoplay="on" loop="on" class="absolute w-2/4 h-2/3 z-10">
+          <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" />
+        </video>
+      </div>
+    </section>
+    <!-- Page five -->
+    <section
+      class="w-fit bg-black border-gray-500 border-t-8 h-5/6 flex justify-center items-center md:flex-row flex-col-reverse">
+      <div class="flex justify-center">
+        <img class="gap-5" src="image/kids.png" alt="" style="width: 82%" />
+      </div>
+      <div class="md:w-[579px] flex mt-4 flex-col md:h-40">
+        <h1
+          class="text-white md:w-[579px] font-sans font-bold text-center pl-4 pr-4 text-4xl md:text-left leading-tight md:text-5xl md:font-black">
+          Create profiles for kids</h1>
+        <h3
+          lass="text-white pl-4 pr-4 md:w-[579px] pt-4 font-sans-sreif text-lg font-normal text-center md:text-left md:text-2xl md:font-normal">
+          send children on adventures with their favourite <br />characters in a space made just for them—free with
+          <br />your membership.</h3>
+      </div>
+    </section>
+    <!-- FAQ -->
+    <div>
+      <div class="w-[100%] h-2 bg-gray-500"></div>
+      <h1 class="mt-10 text-white text-4xl flex justify-center">Frequently Asked Questions</h1>
+      <div class="text-white mt-10 bg-black py-2 px-8 max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
+        <ul>
+          <li>
+            <button
+              class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10"
+              aria-expanded="false" onclick="toggleFAQ(this)">
+              <span class="flex-1 text-base-content">What is Netflix?</span>
+              <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center transition duration-200 ease-out false"></rect>
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+              </svg>
+            </button>
+            <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden"
+              style="transition: max-height 0.3s ease-in-out 0s;">
+              <div class="pb-5 leading-relaxed">
+                <div class="space-y-2 leading-relaxed">Netflix is a streaming service that offers a wide variety of
+                  award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected
+                  devices.
+
+                  You can watch as much as you want, whenever you want without a single commercial – all for one low
+                  monthly price. There's always something new to discover and new TV shows and movies are added every
+                  week!</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button
+              class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10"
+              aria-expanded="false" onclick="toggleFAQ(this)">
+              <span class="flex-1 text-base-content">How much does Netflix cost</span>
+              <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center transition duration-200 ease-out false"></rect>
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+              </svg>
+            </button>
+            <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden"
+              style="transition: max-height 0.3s ease-in-out 0s;">
+              <div class="pb-5 leading-relaxed">
+                <div class="space-y-2 leading-relaxed">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+                  streaming device, all for one fixed monthly fee. Plans range from EUR 11.99 to EUR 7.99 a month. No
+                  extra costs, no contracts.</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button
+              class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10"
+              aria-expanded="false" onclick="toggleFAQ(this)">
+              <span class="flex-1 text-base-content">Is there a waiting period for insurance claims?</span>
+              <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center transition duration-200 ease-out false"></rect>
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+              </svg>
+            </button>
+            <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden"
+              style="transition: max-height 0.3s ease-in-out 0s;">
+              <div class="pb-5 leading-relaxed">
+                <div class="space-y-2 leading-relaxed">There may be a waiting period for certain insurance claims,
+                  depending on the policy terms and conditions. Please refer to your policy documents for details.</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Login move -->
+    <div class="bg-black pt-4 text-center border-none pb-16">
+      <p class="text-white md:w-[579px] pt-4 pr-4 pl-4 font-sans-sreif md:text-xl md:font-normal">Ready to watch? Enter
+        your email to create or restart your membership.</p>
+      <div class="flex gap-3 flex-col md:flex-row text-center justify-center mt-6">
+        <div>
+          <input
+            class="w-56 md:w-96 h-14 bg-black text-white bg-opacity-50 font-netflix-sans text-xl border-gray-300 pl-6 rounded-md border"
+            type="email" placeholder="Email Address" />
+        </div>
+        <div>
+          <button class="w-48 h-14 text-2xl bg-red-600 hover:bg-blue-700 text-white font-sans py-2 px-4 rounded">Get
+            Started ></button>
+        </div>
+      </div>
+    </div>
+    <!-- Footer  -->
+    <footer
+      class="md:h-2/3 bg-black border-t-8 flex pl-4 border-gray-600 flex-row items-center justify-center flex-wrap gap-32">
+      <div class="flex justify-center items-center gap-4">
+        <div class="text-white pt-3">
+          <ul class="">
+            <li class="pb-6">Questions? Call<a href="#" class="underline pl-2">000-800-919-1694</a></li>
+            <a href="" class="underline">
+              <li class="pb-3">FAQ</li>
+            </a>
+            <a href="" class="underline">
+              <li class="pb-3">Investor Relations</li>
+            </a>
+            <a href="" class="underline">
+              <li class="pb-3">Privacy</li>
+            </a>
+            <a href="" class="underline">
+              <li class="pb-3">Speed Test</li>
+            </a>
+            <a href="" class="underline">
+              <li>Netflix India</li>
+            </a>
+          </ul>
+        </div>
+        <div class="text-white">
+          <ul>
+            <a href="#" class="underline">
+              <li class="pb-3">Help Centre</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Jobs</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Cookie Preferences</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Legal Notices</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex justify-center text-left gap-32">
+        <div class="text-white">
+          <ul>
+            <a href="#" class="underline">
+              <li class="pb-3">Account</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Ways to Watch</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Corporate Information</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Only on Netflix</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="text-white">
+          <ul>
+            <a href="#" class="underline">
+              <li class="pb-3">Media Centre</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Terms of Use</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Contact Us</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- Screen 1025px -->
+  <div class="max-with h-screen w-fit">
+    <!-- Page one -->
+    <div class="w-fit h-full"
+      style="background: linear-gradient(to bottom,rgba(0, 0, 0, 0.7) 0%,rgba(0, 0, 0, 0.4) 70%,rgba(0, 0, 0, 0.4) 100%),url('https://assets.nflxext.com/ffe/siteui/vlv3/9d3533b2-0e2b-40b2-95e0-ecd7979cc88b/9c86c926-6668-4824-b071-c67be67c96e3/UZ-en-20240311-popsignuptwoweeks-perspective_alpha_website_medium.jpg')bottom/cover;">
+      <!-- Navbar -->
+      <div class="flex justify-center">
+        <div class="sm:w-9/12 w-full pr-4 pl-4 flex gap-4 justify-between pt-7">
+          <div>
+            <svg viewBox="0 0 111 30" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+              class="fill-current text-red-600 md:w-36 md:h-10 w-24 h-auto default-ltr-cache-1d568uk ev1dnif2">
+              <g>
+                <path
+                  d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z">
+                </path>
+              </g>
+            </svg>
+          </div>
+          <div>
+            <div class="flex gap-5">
+              <div class="flex gap-5">
+                <a href="/Netflix/index.html">
+                  <button class="w-20 h-8 bg-red-500 hover:bg-blue-700 text-white rounded">Films</button>
+                </a>
+                <button class="w-20 h-8 bg-red-500 hover:bg-blue-700 text-white rounded">Sign In</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-4/5 font-sans flex flex-col justify-center items-center">
+        <div class="flex">
+          <h1
+            class="text-white max-w-5xl font-sans pl-4 pr-4 leading-tight sm:text-5xl text-3xl text-center font-bold sm:font-black">
+            Unlimited movies, TV shows, and more</h1>
+        </div>
+        <div class="mt-4">
+          <p class="text-white max-w-5xl font-sans-sreif sm:text-2xl text-lg text-center font-normal">Watch anywhere.
+            Cancel anytime.</p>
+        </div>
+        <div class="mt-4">
+          <h3 class="text-white max-w-5xl font-sans-sreif pl-4 pr-4 md:text-xl text-lg text-center font-normal">Ready to
+            watch? Enter your email to create or restart your membership.</h3>
+          <div class="flex gap-3 flex-col md:flex-row text-center justify-center mt-6">
+            <div>
+              <input
+                class="md:w-96 h-14 w-72 bg-black text-white bg-opacity-50 font-netflix-sans text-xl border-gray-300 pl-6 rounded-md border"
+                type="email" placeholder="Email Address" />
+            </div>
+            <div>
+              <button class="w-48 h-14 text-2xl bg-red-600 hover:bg-blue-700 text-white font-sans py-2 px-4 rounded">Get
+                Started<i class="fa-solid fa-chevron-right" style="font-size: smaller"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page two -->
+    <section class="w-fit bg-black border-gray-500 border-t-8 h-5/6 flex justify-center items-center lg:flex-row gap-5">
+      <div class="md:w-[579px] flex mt-4 flex-col md:h-40">
+        <h1
+          class="text-white md:w-[579px] font-sans font-bold text-center pr-4 text-4xl lg:text-left leading-tight lg:text-5xl md:font-black">
+          Enjoy on your TV</h1>
+        <h3
+          class="text-white md:w-[579px] pt-4 text-center pl-4 pr-4 text-lg font-normal lg:text-left font-sans-sreif md:text-2xl md:font-normal">
+          Watch on smart TVs, PlayStation, Xbox, Chromecast,<br />Apple TV,Blu-ray players and more.</h3>
+      </div>
+      <div class="relative flex justify-center">
+        <img class="relative gap-5 z-20" src="image/tv.png" alt="" style="width: 82%" />
+        <video type="m4v" autoplay="on" loop="on" class="absolute w-2/3 h-2/3 top-11 z-10">
+          <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" />
+        </video>
+      </div>
+    </section>
+    <!-- Page three  -->
+    <section
+      class="w-fit bg-black border-gray-500 border-t-8 h-5/6 flex justify-center items-center md:flex-row flex-col-reverse gap-5">
+      <div class="flex relative flex-col justify-center items-center">
+        <img class="relative gap-5 z-20 md:w-[82%]" src="image/mobile-0819.jpg" alt="" />
+        <div
+          class="absolute bottom-6 z-20 md:w-3/5 md:h-24 rounded-2xl bg-black border flex gap-x-10 justify-center items-center border-slate-200">
+          <img class="h-20 pt-2 pl-3" src="image/stranger things.png" alt="" />
+          <div>
+            <h3 class="text-white text-base font-netflix-sans">Stranger Things</h3>
+            <div><a class="text-blue-800" href="#">Downloading...</a></div>
+          </div>
+          <div>
+            <img class="w-12" src="image/loading.gif" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="md:w-[579px] flex mt-4 flex-col md:h-40">
+        <h1
+          class="text-white md:w-[579px] text-4xl font-bold font-sans pl-3 pr-3 text-center md:text-left leading-tight md:text-5xl md:font-black">
+          Download your shows to <br />watch offline</h1>
+        <h3
+          class="text-white md:w-[579px] pt-4 text-center pl-4 pr-4 text-lg font-normal md:text-left font-sans-sreif md:text-2xl md:font-normal">
+          Save your favourites easily and always have <br />something to watch.</h3>
+      </div>
+    </section>
+    <!-- Page four -->
+    <section
+      class="w-fit bg-black border-gray-500 border-t-8 h-5/6 flex justify-center items-center md:flex-row flex-col gap-5">
+      <div class="md:w-[579px] flex mt-4 flex-col md:h-40">
+        <h1
+          class="text-white md:w-[579px] font-sans font-bold text-4xl pr-4 pl-4 text-center md:text-left leading-tight md:text-5xl md:font-black">
+          Watch everywhere</h1>
+        <h3
+          class="text-white md:w-[579px] pl-4 pr-4 pt-4 font-sans-sreif text-lg font-normal text-center md:text-left md:text-2xl md:font-normal">
+          Stream unlimited movies and TV shows on your <br />phone, tablet, laptop, and TV.</h3>
+      </div>
+      <div class="relative flex justify-center">
+        <img class="relative gap-5 z-20"
+          src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt=""
+          style="width: 82%" />
+        <video type="m4v" autoplay="on" loop="on" class="absolute w-2/4 h-2/3 z-10">
+          <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" />
+        </video>
+      </div>
+    </section>
+    <!-- Page five -->
+    <section
+      class="w-fit bg-black border-gray-500 border-t-8 h-5/6 flex justify-center items-center md:flex-row flex-col-reverse">
+      <div class="flex justify-center">
+        <img class="gap-5" src="image/kids.png" alt="" style="width: 82%" />
+      </div>
+      <div class="md:w-[579px] flex mt-4 flex-col md:h-40">
+        <h1
+          class="text-white md:w-[579px] font-sans font-bold text-center pl-4 pr-4 text-4xl md:text-left leading-tight md:text-5xl md:font-black">
+          Create profiles for kids</h1>
+        <h3
+          lass="text-white pl-4 pr-4 md:w-[579px] pt-4 font-sans-sreif text-lg font-normal text-center md:text-left md:text-2xl md:font-normal">
+          send children on adventures with their favourite <br />characters in a space made just for them—free with
+          <br />your membership.</h3>
+      </div>
+    </section>
+    <!-- FAQ -->
+    <div>
+      <div class="w-[100%] h-2 bg-gray-500"></div>
+      <h1 class="mt-10 text-white text-4xl flex justify-center">Frequently Asked Questions</h1>
+      <div class="text-white mt-10 bg-black py-2 px-8 max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
+        <ul>
+          <li>
+            <button
+              class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10"
+              aria-expanded="false" onclick="toggleFAQ(this)">
+              <span class="flex-1 text-base-content">What is Netflix?</span>
+              <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center transition duration-200 ease-out false"></rect>
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+              </svg>
+            </button>
+            <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden"
+              style="transition: max-height 0.3s ease-in-out 0s;">
+              <div class="pb-5 leading-relaxed">
+                <div class="space-y-2 leading-relaxed">Netflix is a streaming service that offers a wide variety of
+                  award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected
+                  devices.
+
+                  You can watch as much as you want, whenever you want without a single commercial – all for one low
+                  monthly price. There's always something new to discover and new TV shows and movies are added every
+                  week!</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button
+              class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10"
+              aria-expanded="false" onclick="toggleFAQ(this)">
+              <span class="flex-1 text-base-content">How much does Netflix cost</span>
+              <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center transition duration-200 ease-out false"></rect>
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+              </svg>
+            </button>
+            <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden"
+              style="transition: max-height 0.3s ease-in-out 0s;">
+              <div class="pb-5 leading-relaxed">
+                <div class="space-y-2 leading-relaxed">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+                  streaming device, all for one fixed monthly fee. Plans range from EUR 11.99 to EUR 7.99 a month. No
+                  extra costs, no contracts.</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button
+              class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10"
+              aria-expanded="false" onclick="toggleFAQ(this)">
+              <span class="flex-1 text-base-content">Is there a waiting period for insurance claims?</span>
+              <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center transition duration-200 ease-out false"></rect>
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+              </svg>
+            </button>
+            <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden"
+              style="transition: max-height 0.3s ease-in-out 0s;">
+              <div class="pb-5 leading-relaxed">
+                <div class="space-y-2 leading-relaxed">There may be a waiting period for certain insurance claims,
+                  depending on the policy terms and conditions. Please refer to your policy documents for details.</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Login move -->
+    <div class="bg-black pt-4 text-center border-none pb-16">
+      <p class="text-white md:w-[579px] pt-4 pr-4 pl-4 font-sans-sreif md:text-xl md:font-normal">Ready to watch? Enter
+        your email to create or restart your membership.</p>
+      <div class="flex gap-3 flex-col md:flex-row text-center justify-center mt-6">
+        <div>
+          <input
+            class="w-56 md:w-96 h-14 bg-black text-white bg-opacity-50 font-netflix-sans text-xl border-gray-300 pl-6 rounded-md border"
+            type="email" placeholder="Email Address" />
+        </div>
+        <div>
+          <button class="w-48 h-14 text-2xl bg-red-600 hover:bg-blue-700 text-white font-sans py-2 px-4 rounded">Get
+            Started ></button>
+        </div>
+      </div>
+    </div>
+    <!-- Footer  -->
+    <footer
+      class="md:h-2/3 bg-black border-t-8 flex pl-4 border-gray-600 flex-row items-center justify-center flex-wrap gap-32">
+      <div class="flex justify-center items-center gap-4">
+        <div class="text-white pt-3">
+          <ul class="">
+            <li class="pb-6">Questions? Call<a href="#" class="underline pl-2">000-800-919-1694</a></li>
+            <a href="" class="underline">
+              <li class="pb-3">FAQ</li>
+            </a>
+            <a href="" class="underline">
+              <li class="pb-3">Investor Relations</li>
+            </a>
+            <a href="" class="underline">
+              <li class="pb-3">Privacy</li>
+            </a>
+            <a href="" class="underline">
+              <li class="pb-3">Speed Test</li>
+            </a>
+            <a href="" class="underline">
+              <li>Netflix India</li>
+            </a>
+          </ul>
+        </div>
+        <div class="text-white">
+          <ul>
+            <a href="#" class="underline">
+              <li class="pb-3">Help Centre</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Jobs</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Cookie Preferences</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Legal Notices</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex justify-center text-left gap-32">
+        <div class="text-white">
+          <ul>
+            <a href="#" class="underline">
+              <li class="pb-3">Account</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Ways to Watch</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Corporate Information</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Only on Netflix</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="text-white">
+          <ul>
+            <a href="#" class="underline">
+              <li class="pb-3">Media Centre</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Terms of Use</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Contact Us</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- Mobile -->
+  <div class="mobile h-screen w-fit">
+    <!-- Page one -->
+    <div class="w-fit h-full"
+      style="background: linear-gradient(to bottom,rgba(0, 0, 0, 0.7) 0%,rgba(0, 0, 0, 0.4) 70%,rgba(0, 0, 0, 0.4) 100%),url('https://assets.nflxext.com/ffe/siteui/vlv3/9d3533b2-0e2b-40b2-95e0-ecd7979cc88b/9c86c926-6668-4824-b071-c67be67c96e3/UZ-en-20240311-popsignuptwoweeks-perspective_alpha_website_medium.jpg')bottom/cover;">
+      <!-- Navbar -->
+      <div class="flex justify-center">
+        <div class="sm:w-9/12 w-full pr-4 pl-4 flex gap-4 justify-between pt-7">
+          <div>
+            <svg viewBox="0 0 111 30" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+              class="fill-current text-red-600 md:w-36 md:h-10 w-24 h-auto default-ltr-cache-1d568uk ev1dnif2">
+              <g>
+                <path
+                  d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z">
+                </path>
+              </g>
+            </svg>
+          </div>
+          <div>
+            <div class="flex gap-5">
+              <div class="flex gap-5">
+                <a href="/Netflix/index.html">
+                  <button class="w-20 h-8 bg-red-500 hover:bg-blue-700 text-white rounded">Films</button>
+                </a>
+                <button class="w-20 h-8 bg-red-500 hover:bg-blue-700 text-white rounded">Sign In</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-4/5 font-sans flex flex-col justify-center items-center">
+        <div class="flex">
+          <h1
+            class="text-white max-w-5xl font-sans pl-4 pr-4 leading-tight sm:text-5xl text-3xl text-center font-bold sm:font-black">
+            Unlimited movies, TV shows, and more</h1>
+        </div>
+        <div class="mt-4">
+          <p class="text-white max-w-5xl font-sans-sreif sm:text-2xl text-lg text-center font-normal">Watch anywhere.
+            Cancel anytime.</p>
+        </div>
+        <div class="mt-4">
+          <h3 class="text-white max-w-5xl font-sans-sreif pl-4 pr-4 md:text-xl text-lg text-center font-normal">Ready to
+            watch? Enter your email to create or restart your membership.</h3>
+          <div class="flex gap-2 flex-col md:flex-row text-center justify-center mt-6">
+            <div>
+              <input
+                class="md:w-96 h-14 w-72 bg-black text-white bg-opacity-50 font-netflix-sans text-xl border-gray-300 pl-6 rounded-md border"
+                type="email" placeholder="Email Address" />
+            </div>
+            <div>
+              <button class="w-48 h-14 text-2xl bg-red-600 hover:bg-blue-700 text-white font-sans py-2 px-4 rounded">Get
+                Started<i class="fa-solid fa-chevron-right" style="font-size: smaller"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page two -->
+    <section class="w-fit bg-black border-gray-500 border-t-8 h-5/6 flex justify-center items-center lg:flex-row gap-5">
+      <div class="relative flex justify-center">
+        <img class="relative gap-5 z-20" src="image/tv.png" alt="" style="width: 82%" />
+        <video type="m4v" autoplay="on" loop="on" class="absolute w-2/3 h-2/3 top-11 z-10">
+          <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" />
+        </video>
+      </div>
+    </section>
+    <!-- Page three  -->
+    <section
+      class="w-fit bg-black border-gray-500 border-t-8 h-5/6 flex justify-center items-center md:flex-row flex-col-reverse gap-5">
+      <div class="flex relative flex-col justify-center items-center">
+        <img class="relative gap-5 z-20 md:w-[82%]" src="image/mobile-0819.jpg" alt="" />
+        <div
+          class="absolute bottom-6 z-20 md:w-3/5 md:h-24 rounded-2xl bg-black border flex gap-x-10 justify-center items-center border-slate-200">
+          <img class="h-20 pt-2 pl-3" src="image/stranger things.png" alt="" />
+          <div>
+          </div>
+          <div>
+            <img class="w-12" src="image/loading.gif" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Page four -->
+    <section
+      class="w-fit bg-black border-gray-500 border-t-8 h-5/6 flex justify-center items-center md:flex-row flex-col gap-5">
+      <div class="relative flex justify-center">
+        <img class="relative gap-5 z-20"
+          src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt=""
+          style="width: 82%" />
+        <video type="m4v" autoplay="on" loop="on" class="absolute w-2/4 h-2/3 z-10">
+          <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" />
+        </video>
+      </div>
+    </section>
+    <!-- Page five -->
+    <section
+      class="w-fit bg-black border-gray-500 border-t-8 h-5/6 flex justify-center items-center md:flex-row flex-col-reverse">
+      <div class="flex justify-center">
+        <img class="gap-5" src="image/kids.png" alt="" style="width: 82%" />
+      </div>
+    </section>
+    <!-- FAQ -->
+    <div>
+      <div class="w-[100%] h-2 bg-gray-500"></div>
+      <h1 class="mt-10 text-white text-4xl flex justify-center">Frequently Asked Questions</h1>
+      <div class="text-white mt-10 bg-black py-2 px-8 max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
+        <ul>
+          <li>
+            <button
+              class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10"
+              aria-expanded="false" onclick="toggleFAQ(this)">
+              <span class="flex-1 text-base-content">What is Netflix?</span>
+              <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center transition duration-200 ease-out false"></rect>
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+              </svg>
+            </button>
+            <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden"
+              style="transition: max-height 0.3s ease-in-out 0s;">
+              <div class="pb-5 leading-relaxed">
+                <div class="space-y-2 leading-relaxed">Netflix is a streaming service that offers a wide variety of
+                  award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected
+                  devices.
+
+                  You can watch as much as you want, whenever you want without a single commercial – all for one low
+                  monthly price. There's always something new to discover and new TV shows and movies are added every
+                  week!</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button
+              class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10"
+              aria-expanded="false" onclick="toggleFAQ(this)">
+              <span class="flex-1 text-base-content">How much does Netflix cost</span>
+              <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center transition duration-200 ease-out false"></rect>
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+              </svg>
+            </button>
+            <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden"
+              style="transition: max-height 0.3s ease-in-out 0s;">
+              <div class="pb-5 leading-relaxed">
+                <div class="space-y-2 leading-relaxed">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+                  streaming device, all for one fixed monthly fee. Plans range from EUR 11.99 to EUR 7.99 a month. No
+                  extra costs, no contracts.</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button
+              class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10"
+              aria-expanded="false" onclick="toggleFAQ(this)">
+              <span class="flex-1 text-base-content">Is there a waiting period for insurance claims?</span>
+              <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center transition duration-200 ease-out false"></rect>
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+              </svg>
+            </button>
+            <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden"
+              style="transition: max-height 0.3s ease-in-out 0s;">
+              <div class="pb-5 leading-relaxed">
+                <div class="space-y-2 leading-relaxed">There may be a waiting period for certain insurance claims,
+                  depending on the policy terms and conditions. Please refer to your policy documents for details.</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Login move -->
+    <div class="bg-black pt-4 text-center border-none pb-16">
+      <p class="text-white md:w-[579px] pt-4 pr-4 pl-4 font-sans-sreif md:text-xl md:font-normal">Ready to watch? Enter
+        your email to create or restart your membership.</p>
+      <div class="flex gap-3 flex-col md:flex-row text-center justify-center mt-6">
+        <div>
+          <input
+            class="w-56 md:w-96 h-14 bg-black text-white bg-opacity-50 font-netflix-sans text-xl border-gray-300 pl-6 rounded-md border"
+            type="email" placeholder="Email Address" />
+        </div>
+        <div>
+          <button class="w-48 h-14 text-2xl bg-red-600 hover:bg-blue-700 text-white font-sans py-2 px-4 rounded">Get
+            Started ></button>
+        </div>
+      </div>
+    </div>
+    <!-- Footer  -->
+    <footer
+      class="md:h-2/3 bg-black border-t-8 flex pl-4 border-gray-600 flex-row items-center justify-center flex-wrap gap-32">
+      <div class="flex justify-center items-center gap-4">
+        <div class="text-white pt-3">
+          <ul class="">
+            <li class="pb-6">Questions? Call<a href="#" class="underline pl-2">000-800-919-1694</a></li>
+            <a href="" class="underline">
+              <li class="pb-3">FAQ</li>
+            </a>
+            <a href="" class="underline">
+              <li class="pb-3">Investor Relations</li>
+            </a>
+            <a href="" class="underline">
+              <li class="pb-3">Privacy</li>
+            </a>
+            <a href="" class="underline">
+              <li class="pb-3">Speed Test</li>
+            </a>
+            <a href="" class="underline">
+              <li>Netflix India</li>
+            </a>
+          </ul>
+        </div>
+        <div class="text-white">
+          <ul>
+            <a href="#" class="underline">
+              <li class="pb-3">Help Centre</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Jobs</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Cookie Preferences</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Legal Notices</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex justify-center text-left gap-32">
+        <div class="text-white">
+          <ul>
+            <a href="#" class="underline">
+              <li class="pb-3">Account</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Ways to Watch</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Corporate Information</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Only on Netflix</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="text-white">
+          <ul>
+            <a href="#" class="underline">
+              <li class="pb-3">Media Centre</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Terms of Use</li>
+            </a>
+            <a href="#" class="underline">
+              <li class="pb-3">Contact Us</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    function toggleFAQ(button) {
+      const content = button.nextElementSibling;
+      button.setAttribute("aria-expanded", button.getAttribute("aria-expanded") === "false" ? "true" : "false");
+      content.style.maxHeight = button.getAttribute("aria-expanded") === "true" ? content.scrollHeight + "px" : "0";
+    }
+  </script>
+</body>
+
+</html>

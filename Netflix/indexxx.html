@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Header</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black">
+  <header class="header fixed top-0 left-0 w-full flex items-center p-4 bg-transparent text-white transition-all duration-150">
+    <div class="col">
+      <div id="logo" class="netflix mobile h-10 w-6 border-l-2 border-r-2 border-red"></div>
+      <img id="logo" class="logo no-mobile mr-4" src="images/netflix.svg" alt="netflix logo" />
+      <nav id="no-dropdown" class="items white flex">
+        <ul>
+          <li id="home" class="item"><a class="active" href="index.html">Home</a></li>
+          <li id="series" class="item"><a href="series.html">Series</a></li>
+          <li id="movies" class="item"><a href="movies.html">Movies</a></li>
+          <li id="list" class="item"><a href="list.html">My List</a></li>
+        </ul>
+      </nav>
+    </div>
+  
+    <div class="col ml-auto gap-4">
+      <form class="search flex items-center relative">
+        <svg class="search-btn w-6 transition-transform cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+        </svg>
+        <input type="text" placeholder="Search..." class="input absolute top-0 right-0 z-[-1] px-4 py-2 text-white bg-opacity-75 border-[1px] border-white rounded transform scale-x-0 transition-transform duration-200 focus:outline-none" name="title" />
+        <svg class="close-btn w-6 transition-transform cursor-pointer absolute right-2 opacity-0 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" />
+        </svg>
+      </form>
+      <div class="icons">
+        <button class="icon moon" onclick="toggleMode()">
+          <img src="images/moon.svg" alt="moon btn" />
+        </button>
+        <button class="icon sun" onclick="toggleMode()">
+          <img src="images/sun.svg" alt="sun btn" />
+        </button>
+      </div>
+      <nav id="dropdown" class="hidden md:flex">
+        <button class="icon" onclick="toggleMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+          </svg>
+        </button>
+        <ul class="dropdown hidden ml-2">
+          <li id="home"><a href="index.html">Home</a></li>
+          <li id="series"><a href="series.html">Series</a></li>
+          <li id="movies"><a href="movies.html">Movies</a></li>
+          <li id="list"><a href="list.html">My List</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</body>
+</html>
